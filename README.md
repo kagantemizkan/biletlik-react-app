@@ -4,14 +4,15 @@
 
 
 ## Ekran Görüntüleri
-
-![Uygulama Ekran Görüntüsü](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![chrome-capture-2023-4-29](https://github.com/kagantemizkan/biletlik-react-app/assets/46727689/6210c842-cc2c-4acf-9349-e59cdc1d728e)
 ## 
-![Uygulama Ekran Görüntüsü](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![chrome-capture-2023-4-29 (1)](https://github.com/kagantemizkan/biletlik-react-app/assets/46727689/9f68edd0-fada-47a1-98f3-84a28c33a282)
 ## 
-![Uygulama Ekran Görüntüsü](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![chrome-capture-2023-4-29 (2)](https://github.com/kagantemizkan/biletlik-react-app/assets/46727689/29d0a22d-e2dd-4415-98ef-29eb106e4804)
 ## 
-![Uygulama Ekran Görüntüsü](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![chrome-capture-2023-4-29 (3)](https://github.com/kagantemizkan/biletlik-react-app/assets/46727689/90691bc3-c283-487a-9531-f5289fba6d22)
+## 
+![chrome-capture-2023-4-29 (4)](https://github.com/kagantemizkan/biletlik-react-app/assets/46727689/505397ea-c1f8-4ca8-a0e1-bf58f29c337c)
 
   
 ## Bilgisayarınızda Çalıştırın
