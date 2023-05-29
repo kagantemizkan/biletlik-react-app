@@ -1,5 +1,5 @@
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo]([https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png](https://github.com/kagantemizkan/biletlik-react-app/assets/46727689/b0e72f4e-8ca5-478b-a0b3-792574f001c2))
 
     
 
