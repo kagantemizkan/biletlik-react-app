@@ -1,4 +1,4 @@
-![icon](https://github.com/kagantemizkan/biletlik-react-app/assets/46727689/deb7129b-62f5-4f6b-928d-be0573e833ac)
+![icon](https://github.com/kagantemizkan/biletlik-react-app/assets/46727689/642d8d77-1c1d-4ccb-8b75-a78a731fc463)
 
 Üniversite projesi için, iki takım arkadaşımla birlikte Biletlik adında bir film bilet satış web uygulaması geliştirdik. Node.js'i backend tarafında, React ve SCSS'i ise frontend tarafında kullandık. Ben frontend geliştirme lideri olarak görev aldım ve kullanıcı arayüzünü tasarladım. Takım arkadaşlarımla yakın işbirliği içinde çalışarak kullanıcı kimlik doğrulama, bilet rezervasyonu gibi temel fonksiyonları uyguladık ve işlevsel bir prototip oluşturduk. Bu proje, Node.js, React ve SCSS konularında pratik deneyim kazanmama olanak sağladı.
 
