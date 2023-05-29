@@ -57,8 +57,8 @@ Sunucuyu çalıştırın
   
 ## Kullanılan Teknolojiler
 
-**İstemci:** React, Redux, TailwindCSS
+**İstemci:** React, SCSS
 
-**Sunucu:** Node, Express
+**Sunucu:** Node, MySQL
 
   
