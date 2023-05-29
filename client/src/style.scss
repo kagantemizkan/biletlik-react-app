@@ -1,0 +1,747 @@
+$darkgray: #201F1F;
+$yellow: #E3CF16;
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+    font-family: 'Sora', sans-serif;
+    .container {
+        .link{
+            text-decoration: none;
+            color: inherit;  
+        }
+
+        // LOGIN & REGISTER
+        .auth {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: $darkgray;
+
+            h1{
+                font-size: 20px;
+                color: #E3CF16;
+                margin-bottom: 20px;
+            }
+
+       
+            form{
+                display: flex;
+                flex-direction: column;
+                padding: 50px;
+                background-color: white;
+                width: 200px;
+                gap: 20px;
+        
+                input {
+                    padding: 10px;
+                    border: none;
+                    border-bottom: 1px solid gray;
+                }
+
+                button {
+                    padding: 10px;
+                    border: none;
+                    background-color: #E3CF16;
+                    color: #201F1F;
+                    cursor: pointer;
+                }
+
+                p {
+                    font-style: 12px;
+                    color: red;
+                    text-align: center;
+                }
+
+                span {
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+     
+        }
+    
+        // NAVBAR 
+        .navbar{
+            
+            .container{
+                align-items: center;
+                background-color: #201F1F;
+                padding: 10px 0px;
+                display: flex;
+                justify-content: space-between;
+                margin:auto;
+                color: white;
+                
+                .logo{
+                    width: auto;
+                    height: 75px;
+                    padding-left: 20px;
+                }
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+                .input-wrapper {
+
+                    background-color: white;
+                    width: 100%;
+                    border-radius: 20px;
+                    height: 2.5rem;
+                    padding-left: 10px;
+                    padding-right: 5px;
+                    display: flex;
+                }
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    height: 100%;
+                    font-size: 1.25rem;
+                    width: 100%;
+                    margin-left: 10px;
+                    padding-right: 90px;
+
+                }
+
+                input:focus {
+                    outline: none;
+                }
+                
+                #search-icon {
+                    color: #201F1F;
+                    height: 42px;
+                    width: 40px;
+                    padding-right: 5px;
+                }
+
+                .searchBarDiv {
+                    position: relative;
+                }
+                
+                .searchBarDiv input[type=text] {
+                    height: 35px;
+                    width: 400px;
+                    position: absolute;
+                }
+                
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+                .links{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-right: 30px;
+                }
+                h6 {
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+                span{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        // FOOTER
+
+        footer {
+            margin-top: 10%;
+            padding: 100px;
+            display: flex;
+            font-size: 12px;
+            justify-content: space-between;
+            flex-direction: column;
+            color: white;
+            font-size: 18px;
+            
+            .links {
+                flex-direction: column;
+                padding-left: 6px;                
+                padding-top: 10px;
+            }
+            img{
+                width: 100px;
+                margin-right: 10px;
+            }
+            background-color: #201F1F;
+        }
+        //searchbar burdan sonrasini ekledim
+        .data-result-container {
+            position: relative;
+        
+            .dataResult {
+                position: absolute;
+                width: 300px;
+                height: 30px;
+                background-color: white;
+                overflow: hidden;
+                overflow-y: auto;
+            }
+            
+            .dataResult::-webkit-scrollbar {
+                display: none;
+            }
+            
+            .dataResult .dataItem { 
+                width: 100%;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                color: black;
+            }
+        }
+
+
+        // CATEGORY
+    
+        .category {
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+            margin: 10% 18%;
+            .filter-container {
+                padding-bottom: 2rem;
+            }
+            .filter-container button {
+                margin-right: 2rem;
+                min-width: 5rem;
+                padding: 0.5rem 1rem;
+                border: none;
+                background: white;
+                color: #201F1F;
+                border-radius: 1rem;
+                border: 2px solid rgb(30, 43, 71);
+                font-weight: bold;
+                cursor: pointer;
+            }
+            button.active {
+                background: #201F1F;
+                color: white;
+            }
+
+            .popular-movies {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-column-gap: 2rem;
+                grid-row-gap: 3rem;
+
+                img {
+                    cursor: pointer;
+                    width: 100%;
+                    height: 40vh;
+                    object-fit: cover;
+                    border-radius: 1rem;
+                    margin-bottom: 1rem;
+                }
+                h2 {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+
+        
+  /////////////////////////////////////////////// Account Details ////////////////////////////////
+        .account-details {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .account-details-container {
+                width: 675px;
+                height: 375px;
+                border-radius: 40px;
+                display: grid;
+                align-items: start;
+                margin-top: 200px;
+                background-color: #c0c0c0;
+                
+                h2 {
+                    margin-left: 35px;
+                    margin-top: 40px;
+                }
+
+                .user-infos {
+                    margin-left: 65px;
+                    .user-name {
+                        display: flex;
+                        margin-bottom: 10px;
+                    }
+                    .user-epost {
+                        display: flex;
+                    }
+                }
+
+                .sifre-degistir-container {
+                    margin-left: 65px;
+                    
+                    .sifre {
+                        margin-bottom: 10px;
+                        border: none;
+                        height: 30px;
+                        border-radius: 7px;
+                    }
+                    .sifre:focus {
+                        outline: none;
+                    }
+                }
+                .sifre-defistir-button {
+                    align-items: center;
+                    background-color: #000000;
+                    border: 0;
+                    border-radius: 70px;
+                    box-sizing: border-box;
+                    color: #ffffff;
+                    cursor: pointer;
+                    display: inline-flex;
+                    font-size: 16px;
+                    justify-content: center;
+                    line-height: 20px;
+                    max-width: 480px;
+                    min-height: 40px;
+                    min-width: 0px;
+                    overflow: hidden;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    text-align: center;
+                    user-select: none;
+                    vertical-align: middle;
+                  }
+                  
+                  .sifre-defistir-button:hover { 
+                    background-color: #292929;
+                    color: #ffffff;
+                  }
+                  
+                  .sifre-defistir-button:active {
+                    background: #464646;
+                    color: rgb(255, 255, 255, .7);
+                  }
+                  
+
+            }
+        }
+
+
+        // MOVIE DETAILS
+        .movie-details {
+
+            .movie-banner {
+                position: absolute;
+                width: 100%;
+                height: 50rem;
+                mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 30%, transparent 100%);
+            }
+            
+            .film_detail-text {
+                line-height: 40px;
+                font-size: 18px;
+            }
+
+            .movie-details-box {
+                margin-top: 585px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: relative;
+                
+                .details-movie {
+                    margin-left: 50px;
+                    .film-text {
+                        padding-bottom: 35px;
+                        font-size: 50px;
+                    }
+                }
+                .seans-text {
+                    display: grid;
+                    font-size: 50px;
+                    margin-bottom: 45px;
+                }
+
+                .seans-container {
+                    margin-right: 80px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .details-seans {
+                    
+                    .seans-saati-link {
+                        max-width: 30px;
+                        max-height: 25px;
+                        text-decoration: none;    
+                    }
+
+                    .seans-saati {
+                        margin-bottom: 15px;
+                        padding: 10px;
+                        width: 80px;
+                        height: 15px;
+                        background: transparent;
+                        color: #000000;
+                        border-radius: 1rem;
+                        border: 1px solid rgb(0, 0, 0);
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    .seans-saati:hover {
+                        background-color: rgb(214, 214, 214);
+                    }
+
+                    
+
+
+                }
+            }
+
+        }
+
+
+        /////////////////////////////////////////////// TİCKET SALE ////////////////////////////////
+        
+        .ticketsale {
+            position: relative;
+
+            .seat {
+                border: solid #000;
+                background-color: #777;
+                border-width: 2px;
+                height: 20px;
+                width: 24px;
+                margin: 3px;
+                border-radius: 4px;
+            }
+
+            .seat.selected {
+                background-color: #fff200;
+            }
+
+            .seat.occupied {
+                background-color: #e6a2a2;
+            }
+
+            .seat:nth-of-type(2) {
+                margin-right: 18px;
+            }
+
+            .seat:nth-last-of-type(2) {
+                margin-left: 18px;
+            }
+
+            .seat:not(.occupied):hover {
+                cursor: pointer;
+                transform: scale(1.2);
+            }
+              .showcase {
+                padding: 10px 800px;
+                border-radius: 5px;
+                color: #777;
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 200px;
+ 
+                .showcase .seat:not(.occupied):hover {
+                    cursor: default;
+                    transform: scale(1);
+                }
+    
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 10px;
+                }
+    
+                li small {
+                    margin-left: 10px;
+                }
+    
+            }
+            .screen {
+                background-color: #201F1F;
+                width: 30%;
+                height: 100px;
+                position: absolute;
+                top: -75px;
+                left: 50%;
+                clip-path: polygon(0 0, 100% 0, 84% 79%, 16% 79%);
+                transform: translate(-50%, -50%);
+                p {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin: -25px 0 0 -25px;
+                    color: white;
+                    font-size: 18px;
+                }
+            }
+
+            .satın-al-buton {
+                margin-top: 20px;
+                align-items: center;
+                background-color: #000000;
+                border: 0;
+                border-radius: 70px;
+                box-sizing: border-box;
+                color: #ffffff;
+                cursor: pointer;
+                display: inline-flex;
+                font-size: 16px;
+                justify-content: center;
+                line-height: 20px;
+                min-height: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+                user-select: none;
+                vertical-align: middle;
+              }
+              
+              .satın-al-buton:hover { 
+                background-color: #292929;
+                color: #ffffff;
+              }
+              
+              .satın-al-buton:active {
+                background: #464646;
+                color: rgb(255, 255, 255, .7);
+              }
+              
+
+
+
+            .container-ticketsale {
+                perspective: 1000px;
+                margin-bottom: 30px;
+                margin-left: 850px;
+            
+                
+                .row {
+                display: flex;
+                    .seat-number {
+                        font-size: 12px;
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+///////////// My Tickets
+
+    .my-ticket {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+        
+        .my-ticket-container {
+            h2{
+                margin-left: 10px;
+                margin-right: 500px;
+                padding-bottom: 45px;
+            }
+            
+            padding: 30px;
+            width: 675px;
+            height: auto;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            gap: 5px;
+            background-color: #c0c0c0;
+
+            .ticket-details {
+                margin-bottom: 50px;
+                padding: 10px;
+                display: grid;
+                justify-content: center;
+                place-items: center;
+                align-content: center;
+                border-style: solid;
+                border-width: 1.5px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    //SSS
+          
+    .sss-container{
+
+        max-width: 1140px;
+        margin: auto;
+        --background: #f2f5f7;
+        --text-primary: #2f4770;
+        --text-secondary: #647780;
+        --white: #ffffff;
+      }
+
+      
+      .accordion-simple > .active {
+        display: block;
+      }
+      
+      .accordion__faq .inactive{
+        display: none;
+      }
+      
+      .accordion__faq > div{
+        background-color: var(--white);
+        margin-bottom: 20px;
+        padding: 0px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .accordion__title{
+        margin-top: 10px;
+        margin-bottom: 100px;
+      }
+      
+      .accordion__faq-heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .accordion__faq-heading .active{
+        color: var(--text-primary);
+      }
+      
+      .accordion__faq-heading h3{
+        color: var(--text-secondary);
+        font-weight: 600;
+      }
+      
+      .accordion__faq p {
+        margin: 0px;
+        padding-bottom: 0px;
+        color: var(--text-secondary);
+        line-height: 1.4;
+      }
+
+
+
+
+
+//ABOUT US 
+    .welcome_section {
+        text-align: center;
+      }
+      .about-container{
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        background: #ffffff;
+        margin: 0 670px;
+        margin-top: 100px;
+        padding: 0px 20px;
+        border-radius: 7px;
+    }
+    
+    
+    .title-text {
+        text-align: center;
+        background-color: rgb(201, 236, 0);
+        color: #fff;
+        font-weight: 400;
+        border-radius: 50px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .about-container .skill-box {
+        width: 100%;
+        margin: 25px 0;
+    }
+    
+    .skill-box .title{
+        display: block;
+        font-size: 28px;
+        font-weight: 600;
+        color: #333;
+    }
+    
+    .skill-box .skill-bar{
+        height: 20px;
+        width: 100%;
+        border-radius: 6px;
+        margin-top: 6px;
+        background: rgba(0,0, 0, 0.1);
+    }
+    
+    .skill-box .skill-per{
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 95%;
+        border-radius: 6px;
+        background: rgb(89, 0, 233);
+        animation: progress 0.4s ease-in-out forwards;
+        opacity: 0;
+    }
+    
+    .skill-per.biletlik {
+        width: 70%;
+        animation-delay: 0.1s;
+    }
+    
+    
+    @keyframes progress {
+        0% {
+            width: 0;
+            opacity: 1;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .skill-per .tooltip{
+        position: absolute;
+        right: -14px;
+        top: -28px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #fff;
+        padding: 2px 6px;
+        border-radius: 3px;
+        background: rgb(89, 0, 233);
+        z-index: 1;
+    }
+    
+    .tooltip::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -2px;
+        height: 10px;
+        width: 10px;
+        z-index: -1;
+        background-color: rgb(89, 0, 233);
+        transform: translateX(-50%) rotate(45deg);
+    }
+}
